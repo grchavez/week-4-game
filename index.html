@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <title>Crystals Collector</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -31,11 +32,11 @@
 <!-- Win/Loss -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-2 offset-md-4" id="wins">
-			<h5>Win:</h5>
+		<div class="col-md-2 offset-md-4">
+			<h5>Win:</h5><p id="wins"></p>
 		</div>
-		<div class="col-md-2" id="loss">
-			<h5>Loss:</h5>
+		<div class="col-md-2">
+			<h5>Loss:</h5><p id="loss"></p>
 		</div>
 	</div>
 
@@ -47,11 +48,9 @@
 		</div>
 		<!--Random Number -->
 		<div class="col-md-2" id="randNum">
-			<p>Random Number</p>
 		</div>
 		<!-- User Guess -->
 		<div class="col-md-2" id="userGues">
-			<p>Your guess</p>
 		</div>
 		<div class="col-md-4">
 			<img src="assets/images/Quartz.png" id="quartz" class="rounded float-right, img-fluid">
@@ -69,7 +68,7 @@
 
 
 
-<script type="text/javascript" src="assets/javascript/game.js"> </script>
+<script src="assets/javascript/game.js" type="text/javascript"></script>
 </body>
 
 </html>
