@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var ranNum=Math.floor(Math.random()*101+19);
 	console.log(ranNum);
 
-//Appends random number to html //
+//Appends random number and userTotal to html //
 
 $("#randNum").text(ranNum);
 });
@@ -45,41 +45,48 @@ function reset(){
 
 // Win / Loss Function //
 function win(){
+	if (userTotal === ranNum){
 	alert("You win!");
 	numWins++;
 	$("#wins").text(numWins);
-	reset();
+	reset();	
+	}
 }
 
 function loss(){
+	if (userTotal > ranNum){
 	alert("You lose!");
 	numLoss++;
 	$("#loss").text(numLoss);
-	reset();
+	reset();	
+	}
 }
+
 
 // Click Functions //
 
 $("#gemstone").on ("click", function(){
 	userTotal = (userTotal + num1);
-	console.log("New userTotal=" + userTotal);
+	console.log("New userTotal: " + userTotal);
 	$("#userGues").text(userTotal);
+		
 	});
 
 $("#quartz").on ("click", function(){
 	userTotal = (userTotal + num2);
-	console.log("New userTotal=" + userTotal);
-	$("userGues").text(userTotal);
-});
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	});
 
 $("#citrine").on ("click", function(){
 	userTotal = (userTotal + num3);
-	console.log("New userTotal=" + userTotal);
-	$("userGues").text(userTotal);
-});
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	});
 
 $("#zircon").on ("click", function(){
 	userTotal = (userTotal + num4);
-	console.log("New userTotal=" + userTotal);
-	$("userGues").text(userTotal);
-})
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	});
+
