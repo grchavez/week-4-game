@@ -6,12 +6,45 @@ $(document).ready(function(){
 //Appends random number and userTotal to html //
 
 $("#randNum").text(ranNum);
-});
 
-var userTotal = 0;
-$("#userGues").text(userTotal);
 
-// Variables for Crystals.  Random numbers between 1-12 //
+$("#gemstone").on ("click", function(){
+	userTotal = (userTotal + num1);
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	win();
+	loss();
+		
+	});
+
+$("#quartz").on ("click", function(){
+	userTotal = (userTotal + num2);
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	win();
+	loss();
+	});
+
+$("#citrine").on ("click", function(){
+	userTotal = (userTotal + num3);
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	win();
+	loss();
+	});
+
+$("#zircon").on ("click", function(){
+	userTotal = (userTotal + num4);
+	console.log("New userTotal: " + userTotal);
+	$("#userGues").text(userTotal);
+	win();
+	loss();
+	});
+
+	var userTotal = 0;
+	$("#userGues").text(userTotal);
+
+	// Variables for Crystals.  Random numbers between 1-12 //
 
 var num1 = Math.floor(Math.random()*11+1);
 var num2 = Math.floor(Math.random()*11+1);
@@ -28,6 +61,7 @@ var numLoss = 0;
 
 $("#wins").text(numWins);
 $("#loss").text(numLoss);
+
 
 // Reset Function //
 
@@ -62,31 +96,4 @@ function loss(){
 	}
 }
 
-
-// Click Functions //
-
-$("#gemstone").on ("click", function(){
-	userTotal = (userTotal + num1);
-	console.log("New userTotal: " + userTotal);
-	$("#userGues").text(userTotal);
-		
-	});
-
-$("#quartz").on ("click", function(){
-	userTotal = (userTotal + num2);
-	console.log("New userTotal: " + userTotal);
-	$("#userGues").text(userTotal);
-	});
-
-$("#citrine").on ("click", function(){
-	userTotal = (userTotal + num3);
-	console.log("New userTotal: " + userTotal);
-	$("#userGues").text(userTotal);
-	});
-
-$("#zircon").on ("click", function(){
-	userTotal = (userTotal + num4);
-	console.log("New userTotal: " + userTotal);
-	$("#userGues").text(userTotal);
-	});
-
+});
