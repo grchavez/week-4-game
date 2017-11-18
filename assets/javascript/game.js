@@ -85,6 +85,8 @@ function win(){
 	alert("You win!");
 	numWins++;
 	$("#wins").text(numWins);
+	userTotal = 0;
+	$("#userGues").text(userTotal);
 	reset();	
 	}
 }
@@ -94,6 +96,8 @@ function loss(){
 	alert("You lose!");
 	numLoss++;
 	$("#loss").text(numLoss);
+	userTotal = 0;
+	$("#userGues").text(userTotal);
 	reset();	
 	}
 }
