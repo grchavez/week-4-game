@@ -74,6 +74,8 @@ function reset(){
 	num3 = Math.floor(Math.random()*11+1);
 	num4 = Math.floor(Math.random()*11+1);
 	userTotal = 0;
+	$("userGues").append(userTotal);
+
 
 }
 

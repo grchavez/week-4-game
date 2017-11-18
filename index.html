@@ -7,6 +7,7 @@
 
   <title>Crystals Collector</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"
   	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -16,54 +17,57 @@
 <!-- Header -->
 <div class="container">
 	<div class="row justify-content-center">
-		<div class="col-md-4">
+		<div class="col-md-auto" id="head">
 			<h1>Crystal Collector</h1>
 		</div>
 	</div>
 
 <!-- Instructions -->
-<div class="container">
+
 	<div class="row justify-content-center">
-		<div class="col-md-12">
-			<p><h2>Instructions:</h2><br>You will be given a random number at the start of the game.<br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.<br>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.<br>The value of each crystal is hidden from you until you click on it.<br>Each time the game resets, the game will change the values of each crystal.  Good Luck.</p>
+		<div class="col-md-12" id="instruc">
+			<p>You will be given a random number at the start of the game.There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.The value of each crystal is hidden from you until you click on it.Each time the game resets, the game will change the values of each crystal.</p>
 		</div>
 	</div>
 
 <!-- Win/Loss -->
 <div class="container">
-	<div class="row">
-		<div class="col-md-2 offset-md-4">
-			<h5>Win:</h5><p id="wins"></p>
+	<div class="row justify-content-center">
+		<div class="col-md-auto" id="border">
+			<h5>Win</h5><p id="wins"></p>
 		</div>
-		<div class="col-md-2">
-			<h5>Loss:</h5><p id="loss"></p>
+		<div class="col-md-auto" id="border">
+			<h5>Loss</h5><p id="loss"></p>
 		</div>
 	</div>
 
-<!-- Gemstones -->
+<!--Random Number -->
 <div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<img src="assets/images/Gemstone.png" id="gemstone" class="rounded float-left, img-fluid">
-		</div>
-		<!--Random Number -->
-		<div class="col-md-2" id="randNum">
+	<div class="row justify-content-center">
+		<div class="col-md-auto" id="randNum">
 		</div>
 		<!-- User Guess -->
-		<div class="col-md-2" id="userGues">
-		</div>
-		<div class="col-md-4">
-			<img src="assets/images/Quartz.png" id="quartz" class="rounded float-right, img-fluid">
+		<div class="col-md-auto" id="userGues">
 		</div>
 	</div>
 </div>
+
+<!-- Gemstones -->
+<div class="container" id="gem">
 	<div class="row">
-		<div class="col-md-3 offset-md-3">
-			<img src="assets/images/Citrine.png" id="citrine" class="img-fluid">
+		<div class="col-md-3">
+			<img src="assets/images/red.png" id="gemstone" class="rounded float-left, img-fluid" width="150" height="150">
 		</div>
 		<div class="col-md-3">
-			<img src="assets/images/Zircon.png" id="zircon" class="img-fluid">
-		</div>	
+			<img src="assets/images/blue.png" id="quartz" class="rounded float-right, img-fluid" width="150" height="150">
+		</div>
+		<div class="col-md-3">
+			<img src="assets/images/green.png" id="citrine" class="img-fluid" width="150" height="150">
+		</div>
+		<div class="col-md-3">
+			<img src="assets/images/yellow.png" id="zircon" class="img-fluid" width="150" height="150">
+		</div>
+	</div>
 </div>
 
 

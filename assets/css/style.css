@@ -1,0 +1,60 @@
+body {
+	background-color: black;
+}
+
+
+#instruc {
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #eee;
+}
+
+
+#gem {
+	padding-top: 30px;
+}
+
+h5 {
+	border-bottom-style: solid;
+	font-family: 'Press Start 2P', cursive;
+	color: #eee;
+
+}
+
+p {
+	text-align: center;
+	margin-top: 1rem;
+	font-family: 'Press Start 2P', cursive;
+	color: #eee;
+
+}
+
+#border {
+	border-style: solid;
+	border-radius: 5px;
+	margin: 10px 5px;
+	border-color: #eee;
+}
+
+#randNum {
+	border-style: solid;
+	border-radius: 5px;
+	margin: 0 5px;
+	font-family: 'Press Start 2P', cursive;
+	color: #eee;
+
+}
+
+#userGues {
+	border-style: solid;
+	border-radius: 5px;
+	margin: 0 5px;
+	font-family: 'Press Start 2P', cursive;
+	color: #eee;
+}
+
+h1{
+	font-family: 'Press Start 2P', cursive;
+	color: #eee;
+
+}
